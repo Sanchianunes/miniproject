@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<body>
+<h1 style="font-size:60px;text-align:center;">Friendly Bakery</h1>
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="index.html" class="w3-button w3-bar-item">Home</a>
+  <a href="aboutus.html" class="w3-button w3-bar-item">About Us</a>
+  <a href="cakes.html" class="w3-button w3-bar-item">Cakes</a>
+  <a href="contactus.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1542062283%2Fchocolate-and-cream-layer-cake-1812-cover.jpg%3Fitok%3DR_xDiShk" style="width:100%">
+  <img class="mySlides" src="https://i.dailymail.co.uk/i/pix/2017/10/17/20/456E364C00000578-0-image-a-18_1508267720593.jpg" style="width:100%">
+  <img class="mySlides" src="https://lrfs7g12er-flywheel.netdna-ssl.com/wp-content/uploads/2018/03/TALESNY_3051.jpg" style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Friendly Bakery</h2>
+  <p class="w3-opacity"><i>Handcrafted cakes</i></p>
+  <p class="w3-justify">At Friendly, we make everything fresh-from-scratch, all day, every day, using the finest and freshest ingredients. Come by to taste some of our favorite and most delicious bakery fresh foods. We can bake just about anything, so contact us today for your special orders. Treat yourself - you deserve it!</p>
+</section>
+<!--card 1-->
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="https://static.wixstatic.com/media/c22c23_94bdb4b9255c48eba4f3504b7b12e762~mv2_d_2000_2150_s_2.png/v1/fill/w_595,h_640,al_c,q_95,usm_0.66_1.00_0.01/c22c23_94bdb4b9255c48eba4f3504b7b12e762~mv2_d_2000_2150_s_2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Red Velvet Rainbow Cake</h5>
+        <p class="card-text">£170.</p>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+<!--card -->
+ <div class="col mb-4">
+    <div class="card h-100">
+      <img src="https://static.wixstatic.com/media/c22c23_eb029b0a03194a35a84232d910440150~mv2_d_2000_2150_s_2.png/v1/fill/w_595,h_640,al_c,q_95,usm_0.66_1.00_0.01/c22c23_eb029b0a03194a35a84232d910440150~mv2_d_2000_2150_s_2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Red Velvet Rainbow Cake</h5>
+        <p class="card-text">£70.</p>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+<!--card 4-->
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="https://static.wixstatic.com/media/c22c23_3a85fe94092e43daa199f5d273b2bca1~mv2_d_2000_2150_s_2.png/v1/fill/w_595,h_640,al_c,q_95,usm_0.66_1.00_0.01/c22c23_3a85fe94092e43daa199f5d273b2bca1~mv2_d_2000_2150_s_2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Cake with Marbled Curls</h5>
+        <p class="card-text">£80</p>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="..." target="_blank">Sanchia Nunes</a>
+  </p>
+</body>
+</html>
